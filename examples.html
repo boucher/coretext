@@ -1,0 +1,261 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>typeface.js -- Rendering text with Javascript, &lt;canvas&gt;, and VML</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="typeface.js"></script>
+	<script type="text/javascript" src="fonts/optimer_regular.typeface.js"></script>
+</head>
+<body>
+	<div id="header-container"> 
+		<a href="/">
+			<div id="header-title" class="centered-container typeface-js">
+				typeface.js
+			</div>
+		</a>
+	</div>
+	<div style="height: 3px; background-color: #00e0e0; margin-top: -2px; _margin-top: -2px; font-size: 0px"></div>
+	<div style="height: 1px; background-color: #00e0e0; font-size: 0px"></div>
+	<div id="menu-bar">
+		<div class="centered-container">
+			
+			<div class="menu-link-container">
+				<a style="color: white; font-size: 10px !important" href="/">HOME</a>
+			</div>
+			<div class="menu-link-container">
+				<a style="color: white; font-size: 10px !important" href="/usage.html">USAGE</a>
+			</div>
+			<div class="menu-link-container">
+				<a style="color: white; font-size: 10px !important" href="/examples.html">EXAMPLES</a>
+			</div>
+			<div class="menu-link-container">
+				<a style="color: white; font-size: 10px !important" href="/fonts.html">FONTS</a>
+			</div>
+			<div class="menu-link-container">
+				<a style="color: white; font-size: 10px !important" href="/download.html">DOWNLOAD</a>
+			</div>
+			<div class="menu-link-container">
+				<a style="color: white; font-size: 10px !important" href="/donate.html">DONATE</a>
+			</div>
+			<div class="menu-link-container">
+				<a style="color: white; font-size: 10px !important" href="/forum.html">FORUM</a>
+			</div>
+			<div class="menu-link-container">
+				<a style="color: white; font-size: 10px !important" href="/contact.html">CONTACT</a>
+			</div>
+		<div style="clear: both"></div>
+		</div>
+	</div>
+	<div id="content" class="centered-container">
+
+
+
+
+
+<script type="text/javascript" src="/fonts/helvetiker_regular.typeface.js"></script>
+<script type="text/javascript" src="/fonts/helvetiker_bold.typeface.js"></script>
+<script type="text/javascript" src="/fonts/helvetiker_italic.typeface.js"></script>
+
+<style type="text/css">
+.tests-container {
+	position: relative;
+	height: 200px;
+}
+.test-container {
+	font-family: Helvetiker;
+	color: #303030;
+	font-size: 13px;
+	border: 1px solid #c0d0f0;
+	float: left;
+	width: 450px;
+	margin: 5px;
+	position: relative;
+}
+.narrow-cell {
+	width: 375px;
+	font-family: Helvetiker;
+	font-size: 15px !important;
+	color: #404040;
+}
+.example-container {
+	margin: 10px;
+}
+.example-table {
+}
+.example-table td {
+	padding: 6px;
+	background-color: white;
+}
+.spec {
+	width: 160px;
+	color: #505050;
+	font-size: 12px;
+}
+</style>
+
+<div class="page-title typeface-js">
+	Examples
+</div>
+
+
+<div class="example-container">
+	<div class="section-title typeface-js">
+		CSS font-weight, font-style, and color Support
+	</div>
+
+	<table class="example-table" cellspacing=2>
+		<tr>
+			<td class="spec">font-weight: bold</td>
+			<td class="narrow-cell typeface-js" style="font-weight: bold">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua...
+			</td>
+		</tr>
+		<tr>
+			<td class="spec">font-style: italic</td>
+			<td class="narrow-cell typeface-js" style="font-style: italic">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua...
+			</td>
+		</tr>
+		<tr>
+			<td class="spec">color: green</td>
+			<td class="narrow-cell typeface-js" style="color: green">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua...
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div class="example-container">
+	<div class="section-title typeface-js">
+		CSS font-stretch Support
+	</div>
+
+	<table class="example-table" cellspacing=2>
+		<tr>
+			<td class="spec">font-stretch: condensed</td>
+			<td class="narrow-cell typeface-js" style="font-stretch: condensed">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua...
+			</td>
+		</tr>
+		<tr>
+			<td class="spec">font-stretch: semi-condensed</td>
+			<td class="narrow-cell typeface-js" style="font-stretch: semi-condensed">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua...
+			</td>
+		</tr>
+		<tr>
+			<td class="spec">font-stretch: normal</td>
+			<td class="narrow-cell typeface-js" style="font-stretch: normal">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua...
+			</td>
+		</tr>
+		<tr>
+			<td class="spec">font-stretch: expanded</td>
+			<td class="narrow-cell typeface-js" style="font-stretch: expanded">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua...
+			</td>
+		</tr>
+		<tr>
+			<td class="spec">font-stretch: extra-expanded</td>
+			<td class="narrow-cell typeface-js" style="font-stretch: extra-expanded">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua...
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div class="example-container">
+	<div class="section-title typeface-js">
+		CSS letter-spacing  Support
+	</div>
+
+	<table class="example-table" cellspacing=2>
+		<tr>
+			<td class="spec">letter-spacing: -0.65pt</td>
+			<td class="narrow-cell typeface-js" style="letter-spacing: -0.65pt">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua...
+			</td>
+		</tr>
+		<tr>
+			<td class="spec">letter-spacing: normal</td>
+			<td class="narrow-cell typeface-js" style="letter-spacing: normal">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua...
+			</td>
+		</tr>
+		<tr>
+			<td class="spec">letter-spacing: 0.5pt</td>
+			<td class="narrow-cell typeface-js" style="letter-spacing: 0.5pt">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua...
+			</td>
+		</tr>
+		<tr>
+			<td class="spec">letter-spacing: 1pt</td>
+			<td class="narrow-cell typeface-js" style="letter-spacing: 1pt">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua...
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div class="example-container">
+	<div class="section-title typeface-js">
+		CSS line-height Support
+	</div>
+
+	<table class="example-table" cellspacing=2>
+		<tr>
+			<td class="spec">line-height: 0.5em</td>
+			<td class="narrow-cell typeface-js" style="line-height: 0.5em">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua...
+			</td>
+		</tr>
+		<tr>
+			<td class="spec">line-height: 0.75em</td>
+			<td class="narrow-cell typeface-js" style="line-height: 0.75em">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua...
+			</td>
+		</tr>
+		<tr>
+			<td class="spec">line-height: 1em</td>
+			<td class="narrow-cell typeface-js" style="line-height: 1em">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua...
+			</td>
+		</tr>
+		<tr>
+			<td class="spec">line-height: 1.4em</td>
+			<td class="narrow-cell typeface-js" style="line-height: 1.4em">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua...
+			</td>
+		</tr>
+	</table>
+</div>
+
+	</div>
+	<div style="height: 15px;"></div>
+	<center class="footer-text">
+		Copyright (c) 2008 David Chester | davidchester@gmx.net
+	</center>
+	<script type="text/javascript">
+		_typeface_js.renderDocument();
+	</script>
+</body>
+</html>
+
+	
+

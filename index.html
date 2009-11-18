@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>index</title>
+	<script type="text/javascript" charset="utf-8" src="CoreTextTest/typeface.js"></script>
+	<script type="text/javascript" charset="utf-8" src="fonts/helvetiker_font/helvetiker_regular.typeface.js"></script>
+	
+	<script type="text/javascript" charset="utf-8" src="coretext.js"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+	
+	  var canvas, ctx, text = "";
+	
+	  function drawText(string) {
+      
+      //var s = new Date();
+      
+      _typeface_js.renderText(string, canvas);
+      
+      //var dt = new Date() - s;
+      //console.log("dt=" + dt + " len=" + string.length + " dt/length="+(dt/string.length));
+	  }
+    
+    function init() {
+      canvas = document.getElementById("canvas");
+      
+      cache_canvas = document.getElementById("cache");
+      cache_ctx = cache_canvas.getContext("2d");
+      
+      cache_count = 0;
+      
+      window.addEventListener("keypress", function(e) {
+        text += String.fromCharCode(e.charCode);
+        drawText(text)
+      });
+    }
+    
+	</script>
+</head>
+<body onload="init();">
+  <canvas width="500" height="500" id="canvas" style="border: 1px solid blue"></canvas>
+  <canvas width="500" height="100" id="cache" style="border: 1px solid green"></canvas>
+</body>
+</html>
